@@ -10,7 +10,7 @@ type Monster = {
   hasHorns: boolean;
 };
 
-// GlobalState
+// GlobalStaten
 type MonsterState = {
   monsters: Monster[];
 };
@@ -76,6 +76,7 @@ const reducer = (state: MonsterState, action: Action) => {
 type MonsterContextProviderProp = {
   children: React.ReactNode;
 };
+
 function MonsterContextProvider({ children }: MonsterContextProviderProp) {
   // här kan vi använda useReducer eller useState
 
